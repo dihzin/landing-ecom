@@ -44,6 +44,14 @@
             <button class="btn btn-secondary">Ver como funciona</button>
           </div>
         </div>
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <picture class="product-shot">
+              <img src="./src/assets/images/landing/hero-dashboard.png"
+                alt="Visão do painel Maluz Dashboard" loading="eager" decoding="async">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -59,17 +67,19 @@
         </div>
         <div class="proof-metrics">
           <div class="metrics-context">Impacto médio observado após implementação.</div>
-          <div class="metric">
-            <span class="metric-value">+31%</span>
-            <span class="metric-label">giro médio de estoque</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">-22%</span>
-            <span class="metric-label">capital parado</span>
-          </div>
-          <div class="metric">
-            <span class="metric-value">8h</span>
-            <span class="metric-label">economizadas por semana</span>
+          <div class="metrics-grid">
+            <div class="metric">
+              <span class="metric-value">+31%</span>
+              <span class="metric-label">giro médio de estoque</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">-22%</span>
+              <span class="metric-label">capital parado</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">8h</span>
+              <span class="metric-label">economizadas por semana</span>
+            </div>
           </div>
         </div>
       </div>
@@ -148,7 +158,10 @@
           <p class="section-subtitle">Um painel único para leitura de margem, giro e metas.</p>
         </div>
         <div class="demo-frame">
-          <img src="./src/assets/images/landing/hero-dashboard.png" alt="Visão do painel Maluz Dashboard">
+          <picture class="product-shot">
+            <img src="./src/assets/images/landing/hero-dashboard.png" alt="Visão do painel Maluz Dashboard"
+              loading="lazy" decoding="async">
+          </picture>
           <div class="callout callout-1">Margem por coleção</div>
           <div class="callout callout-2">Alertas de giro crítico</div>
         </div>
@@ -176,28 +189,30 @@
           <p class="section-subtitle">Histórias curtas, impacto real.</p>
         </div>
         <div class="testimonials-grid">
-          <div class="testimonial-card testimonial-card--featured">
+          <article class="testimonial-card testimonial-card--featured">
             <div class="testimonial-metric">-28% capital parado</div>
             <p class="testimonial-quote">“Reduzimos o capital parado em 28% em 60 dias.”</p>
             <div class="testimonial-author">
-              <div class="author-avatar" style="background: #cbd5e1;"></div>
+              <div class="author-avatar" aria-hidden="true"></div>
               <div class="author-info">
                 <h4>Luciana Freitas</h4>
-                <span>Gestora, Ateliê Aurora</span>
+                <span class="author-role">Gestora</span>
+                <span class="author-brand">Ateliê Aurora</span>
               </div>
             </div>
-          </div>
-          <div class="testimonial-card">
+          </article>
+          <article class="testimonial-card">
             <div class="testimonial-metric">3 meses de meta</div>
             <p class="testimonial-quote">“A equipe bateu meta por 3 meses seguidos com leitura semanal.”</p>
             <div class="testimonial-author">
-              <div class="author-avatar" style="background: #94a3b8;"></div>
+              <div class="author-avatar" aria-hidden="true"></div>
               <div class="author-info">
                 <h4>Carolina Nunes</h4>
-                <span>Diretora, Vitta Joias</span>
+                <span class="author-role">Diretora</span>
+                <span class="author-brand">Vitta Joias</span>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -273,6 +288,51 @@
       </div>
     </footer>
   </div>
+
+  <div class="modal" id="demo-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title">
+      <h3 id="demo-modal-title">Solicitar demonstração</h3>
+      <form class="modal-form">
+        <label>
+          <span>Nome</span>
+          <input type="text" name="name" autocomplete="name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email">
+        </label>
+        <label>
+          <span>WhatsApp</span>
+          <input type="tel" name="phone" autocomplete="tel">
+        </label>
+        <button class="btn btn-primary" type="button">Solicitar demonstração</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="diagnostico-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="diagnostico-modal-title">
+      <h3 id="diagnostico-modal-title">Ver diagnóstico de oportunidade</h3>
+      <form class="modal-form">
+        <label>
+          <span>Nome</span>
+          <input type="text" name="name" autocomplete="name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email">
+        </label>
+        <label>
+          <span>WhatsApp</span>
+          <input type="tel" name="phone" autocomplete="tel">
+        </label>
+        <button class="btn btn-secondary" type="button">Ver diagnóstico de oportunidade</button>
+      </form>
+    </div>
+  </div>
+
   <script type="module" src="./src/main.js"></script>
 </body>
 

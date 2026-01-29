@@ -76,8 +76,8 @@
     }
 
     .cta-section {
-        padding: 0.9rem var(--spacing-md);
-        margin-bottom: 0.6rem;
+        padding: 0.7rem var(--spacing-md);
+        margin-bottom: 0.5rem;
         border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     }
 
@@ -97,17 +97,22 @@
         width: auto;
         max-width: 190px;
         margin: 0 auto;
-        padding: 0.35rem 0.8rem;
-        font-size: 0.66rem;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.6rem;
         letter-spacing: 0.02em;
         box-shadow: none;
+        opacity: 0.9;
     }
 
     .footer-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 0.25rem;
         padding: 0 var(--spacing-md);
         margin-bottom: 0.4rem;
+    }
+
+    .footer-col:first-child {
+        grid-column: 1 / -1;
     }
 
     .footer h3 {
