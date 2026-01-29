@@ -1,0 +1,46 @@
+/* Market Analysis */
+.market-analysis {
+    padding: var(--spacing-3xl) 0;
+    background-color: white;
+}
+
+.market-content {
+    display: grid;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .market-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.market-text h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.market-visual {
+    position: relative;
+}
+
+/* Add a decorative backdrop for the chart */
+.market-visual::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--color-bg-subtle);
+    border-radius: var(--radius-xl);
+    z-index: 0;
+}
+
+.market-visual img {
+    position: relative;
+    z-index: 1;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+/* Problems Section */
+.problems {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-bg-subtle);
+}
+
+.section-subtitle {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.problems-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .problems-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.problem-card {
+    background-color: white;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.problem-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent-light);
+}
+
+.icon-box {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: rgba(212, 175, 55, 0.1);
+    /* Gold tint */
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    transition: all var(--transition-normal);
+}
+
+.problem-card:hover .icon-box {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+.icon-box svg {
+    width: 32px;
+    height: 32px;
+}
+
+.problem-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}

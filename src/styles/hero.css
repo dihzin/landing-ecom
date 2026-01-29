@@ -1,0 +1,93 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    padding-top: 140px;
+    /* Space for header */
+    padding-bottom: var(--spacing-3xl);
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* Premium subtle background */
+    background: radial-gradient(circle at top right, #F1F5F9 0%, #FAFAF9 50%, #FFFFFF 100%);
+}
+
+.hero .container {
+    display: grid;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .hero .container {
+        grid-template-columns: 1.1fr 0.9fr;
+        /* More space for text */
+    }
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    max-width: 90%;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img-container {
+    position: relative;
+    border-radius: var(--radius-xl);
+    /* Softer corners */
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    transform: perspective(2000px) rotateY(-8deg) rotateX(2deg);
+    /* More subtle 3D */
+    transition: transform var(--transition-slow);
+}
+
+.hero-img-container:hover {
+    transform: perspective(2000px) rotateY(0deg) rotateX(0deg);
+    box-shadow: var(--shadow-2xl);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Abstract Decorations */
+.deco-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.deco-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--color-accent-light) 0%, transparent 70%);
+    top: -150px;
+    right: -100px;
+}
+
+.deco-2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #E2E8F0 0%, transparent 70%);
+    bottom: -50px;
+    left: -100px;
+}

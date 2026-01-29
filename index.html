@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <title>Maluz - Gestão para Revendedoras de Semijoias</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">Maluz</a>
+        <nav class="nav-desktop">
+          <a href="#features" class="nav-link">Funcionalidades</a>
+          <a href="#gamification" class="nav-link">Gamification</a>
+          <a href="#testimonials" class="nav-link">Depoimentos</a>
+        </nav>
+        <button class="btn btn-primary">Começar Agora</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="deco-circle deco-1"></div>
+      <div class="deco-circle deco-2"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Transforme sua paixão por semijoias em um negócio de sucesso.</h1>
+          <p>A plataforma completa para a revendedora de semijoias moderna. Centralize suas vendas, finanças e estoque,
+            e venda mais com nosso sistema de metas e ranking.</p>
+          <div class="flex gap-md">
+            <button class="btn btn-primary">Peça sua Demonstração</button>
+            <button class="btn btn-secondary">Saiba Mais</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-container">
+            <img src="/src/assets/hero_image.png" alt="Revendedora Maluz usando dashboard" class="hero-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="problems" id="problems">
+      <div class="container">
+        <div class="text-center">
+          <h2>Cansada de gerenciar seu negócio em planilhas e cadernos?</h2>
+          <p class="section-subtitle">Os erros que custam caro para quem revende semijoias.</p>
+        </div>
+        <div class="problems-grid">
+          <div class="problem-card">
+            <div class="icon-box">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3>Controle financeiro confuso?</h3>
+            <p>Misturar contas pessoais com as da empresa impede você de ver seu lucro real.</p>
+          </div>
+          <div class="problem-card">
+            <div class="icon-box">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              </svg>
+            </div>
+            <h3>Estoque desorganizado?</h3>
+            <p>Não saber o que tem pronta entrega te faz perder vendas e empatar capital.</p>
+          </div>
+          <div class="problem-card">
+            <div class="icon-box">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3>Vendas estagnadas?</h3>
+            <p>Sem metas claras e um sistema de acompanhamento, você perde a motivação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--spacing-3xl);">
+          <h2>A gestão do seu negócio, simplificada e inteligente.</h2>
+          <p class="section-subtitle">Funcionalidades pensadas para você vender mais e controlar seu negócio.</p>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-text">
+            <h3>Dashboard Intuitivo</h3>
+            <p>Tenha uma visão completa do seu negócio em uma única tela. Acompanhe vendas diárias, lucro mensal e
+              ticket médio em tempo real.</p>
+            <ul style="list-style: disc; padding-left: 20px; color: var(--color-text-muted);">
+              <li>Resumo financeiro</li>
+              <li>Gráficos de vendas</li>
+              <li>Alertas inteligentes</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <img src="/src/assets/dashboard_screenshot.png" alt="Dashboard Maluz"
+              style="border-radius: 8px; box-shadow: var(--shadow-md); width: 100%;">
+          </div>
+        </div>
+
+        <div class="feature-block reverse">
+          <div class="feature-text">
+            <h3>Estoque Inteligente</h3>
+            <p>Nunca mais perca uma venda. Saiba exatamente o que e quando comprar. Identifique produtos parados e faça
+              promoções estratégicas.</p>
+          </div>
+          <div class="feature-visual">
+            <img src="/src/assets/dashboard_screenshot.png" alt="Estoque Maluz"
+              style="border-radius: 8px; box-shadow: var(--shadow-md); width: 100%;">
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <div class="feature-text">
+            <h3>Integração com Nuvemshop</h3>
+            <p>Conecte sua loja online e automatize suas operações. Sincronize produtos e vendas automaticamente.</p>
+          </div>
+          <div class="feature-visual">
+            <img src="/src/assets/dashboard_screenshot.png" alt="Integração Nuvemshop"
+              style="border-radius: 8px; box-shadow: var(--shadow-md); width: 100%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gamification Section -->
+    <section class="gamification" id="gamification">
+      <div class="container">
+        <h2>Venda mais, compita e seja recompensada.</h2>
+        <p class="section-subtitle" style="color: #cbd5e1;">Transforme suas vendas em um jogo motivador e veja seus
+          resultados decolarem.</p>
+
+        <div class="gamification-visual">
+          <img src="/src/assets/gamification.png" alt="Tela de Gamification Maluz" style="max-width: 300px;">
+        </div>
+
+        <div style="margin-top: var(--spacing-xl);">
+          <button class="btn btn-accent">Comece a Jogar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="text-center">
+          <h2 style="margin-bottom: var(--spacing-xl);">O que as revendedoras de sucesso dizem</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"A Maluz mudou minha vida! Antes eu perdia horas no caderno, hoje controlo tudo
+              pelo celular e minhas vendas aumentaram 40%."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: #cbd5e1;"></div>
+              <div class="author-info">
+                <h4>Ana Clara</h4>
+                <span>Revendedora há 3 anos</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"A gamificação é incrível! Fico motivada a bater minhas metas todos os dias. O
+              ranking me faz querer vender mais."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: #94a3b8;"></div>
+              <div class="author-info">
+                <h4>Beatriz Silva</h4>
+                <span>Revendedora Ouro</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-quote">"A integração com a Nuvemshop facilitou demais. Vendo no Instagram e no site e
+              o estoque atualiza sozinho."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: #64748b;"></div>
+              <div class="author-info">
+                <h4>Fernanda Costa</h4>
+                <span>Loja Brilho & Luxo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Analysis Section -->
+    <section class="market-analysis">
+      <div class="container">
+        <div class="market-content">
+          <div class="market-text">
+            <h2>Conheça seu mercado como ninguém.</h2>
+            <p>Saiba exatamente quais produtos estão bombando e quais categorias trazem mais lucro. Nossa inteligência
+              ajuda você a investir nas peças certas.</p>
+            <button class="btn btn-secondary">Ver Análise de Mercado</button>
+          </div>
+          <div class="market-visual">
+            <img src="/src/assets/market_chart.png" alt="Gráfico de Mais Vendidos" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="cta-section">
+          <h2 style="color: var(--color-secondary);">Pronta para levar seu negócio para o próximo nível?</h2>
+          <p style="margin-bottom: var(--spacing-lg); color: var(--color-text-muted);">Junte-se a milhares de
+            revendedoras que já transformaram suas vendas com a Maluz.</p>
+          <button class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Peça sua Demonstração
+            Gratuita</button>
+        </div>
+
+        <div class="footer-content" style="margin-top: var(--spacing-3xl);">
+          <div class="footer-col">
+            <h3 style="font-size: 1.5rem;">Maluz</h3>
+            <p style="color: rgba(255,255,255,0.7);">Plataforma completa de gestão para revendedoras de semijoias.</p>
+          </div>
+          <div class="footer-col">
+            <h3>Solução</h3>
+            <ul class="footer-links">
+              <li><a href="#">Funcionalidades</a></li>
+              <li><a href="#">Para Iniciantes</a></li>
+              <li><a href="#">Para Lojistas</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Ajuda</h3>
+            <ul class="footer-links">
+              <li><a href="#">Central de Ajuda</a></li>
+              <li><a href="#">Fale Conosco</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Legal</h3>
+            <ul class="footer-links">
+              <li><a href="#">Termos de Uso</a></li>
+              <li><a href="#">Privacidade</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center" style="font-size: 0.875rem; color: rgba(255,255,255,0.5);">
+          &copy; 2026 Maluz. Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

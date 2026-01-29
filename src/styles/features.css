@@ -1,0 +1,114 @@
+/* Features Section */
+.features {
+    padding: var(--spacing-3xl) 0;
+    background-color: white;
+}
+
+.feature-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    /* More breathing room */
+    margin-bottom: var(--spacing-3xl);
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .feature-block {
+        flex-direction: row;
+    }
+
+    .feature-block.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.feature-text {
+    flex: 1;
+    padding: var(--spacing-lg);
+}
+
+.feature-text h3 {
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    display: inline-block;
+}
+
+/* Elegant underline for headings */
+.feature-text h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-accent);
+}
+
+.feature-visual {
+    flex: 1;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-md);
+    background: linear-gradient(135deg, #F8FAFC, #FFFFFF);
+    box-shadow: var(--shadow-md);
+    /* Softer shadow */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.feature-visual img {
+    border-radius: var(--radius-lg);
+    width: 100%;
+    display: block;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Gamification Section */
+.gamification {
+    padding: var(--spacing-3xl) 0;
+    /* Deep Navy Gradient */
+    background: linear-gradient(180deg, var(--color-primary) 0%, #020617 100%);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gamification::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.gamification h2 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+}
+
+.gamification p {
+    color: var(--color-text-light);
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.gamification-visual {
+    margin-top: var(--spacing-2xl);
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Glass effect container */
+    border-radius: 50px;
+    /* Pill shape container */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gamification-visual img {
+    border-radius: var(--radius-xl);
+    box-shadow: 0 0 50px rgba(212, 175, 55, 0.2);
+    /* Gold glow */
+}
