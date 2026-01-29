@@ -38,6 +38,14 @@
     }
 }
 
+@media (max-width: 768px) {
+    .header .btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.02em;
+    }
+}
+
 .nav-link {
     font-family: var(--font-sans);
     font-size: 0.9375rem;

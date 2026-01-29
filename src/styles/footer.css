@@ -19,6 +19,12 @@
     margin-bottom: var(--spacing-md);
 }
 
+.cta-section p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: var(--spacing-lg);
+}
+
+
 .footer-content {
     display: grid;
     gap: var(--spacing-xl);
@@ -62,4 +68,70 @@
 .footer-col p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.9375rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-bottom: 0.2rem;
+    }
+
+    .cta-section {
+        padding: 0.9rem var(--spacing-md);
+        margin-bottom: 0.6rem;
+        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+
+    .cta-section h2 {
+        font-size: 1.05rem;
+        line-height: 1.2;
+        margin-bottom: 0.25rem;
+    }
+
+    .cta-section p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-bottom: 0.4rem;
+    }
+
+    .cta-section .btn {
+        width: auto;
+        max-width: 190px;
+        margin: 0 auto;
+        padding: 0.35rem 0.8rem;
+        font-size: 0.66rem;
+        letter-spacing: 0.02em;
+        box-shadow: none;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+        padding: 0 var(--spacing-md);
+        margin-bottom: 0.4rem;
+    }
+
+    .footer h3 {
+        font-size: 0.66rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 0.25rem;
+        opacity: 0.5;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.2rem;
+    }
+
+    .footer-links a {
+        font-size: 0.78rem;
+    }
+
+    .footer-col p {
+        font-size: 0.78rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .footer .text-center {
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+    }
 }
